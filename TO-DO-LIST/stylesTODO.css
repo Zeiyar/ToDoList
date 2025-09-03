@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --couleur-café: #6f4e37;
+    --crème: #f7f1e3;
+    --yellow-café: #ffefd5;
+    --corail: #ff7f50;
+}
+body{
+    font-size: x-large;
+    background-color: var(--yellow-café);
+}
+
+.topOftheToDolist{
+    text-align: center;
+    border-bottom: solid;
+    padding: 2%;
+    background: var(--couleur-café);
+}
+
+#addSquareScreen{
+    display: none;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: var(--corail);
+    left: 11%;
+    top: 10%;
+    z-index: 99;
+}
+
+.done{
+    text-decoration : line-through;
+    color : grey;
+}
+
+ol{
+    margin-left: 15%;
+    font-size: 115%;
+    list-style: none;
+}
+input{
+    height: auto;
+    width: auto;
+}
+input[type="checkbox"]{
+    transform: scale(2);
+    margin: 20px 100px 20px 10px;
+}
+.btn{
+    position: absolute;
+    margin: 0 auto;
+    width: 5%;
+    height: auto;
+    top: 20%;
+    left: 47%;
+}
+
+.btn1{
+    margin-left :10%; 
+}
+
+.section2{
+    margin-top:15%;
+}
