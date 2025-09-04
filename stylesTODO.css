@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --couleur-café: #6f4e37;
+    --crème: #f7f1e3;
+    --yellow-café: #ffefd5;
+    --corail: #ff7f50;
+}
+body{
+    font-size: x-large;
+    background-color: var(--yellow-café);
+}
+
+.topOftheToDolist{
+    text-align: center;
+    border-bottom: solid;
+    padding: 2%;
+    background: var(--couleur-café);
+}
+
+#addSquareScreen{
+    display: none;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: var(--corail);
+    left: 11%;
+    top: 10%;
+    z-index: 99;
+}
+
+.done{
+    text-decoration : line-through;
+    color : grey;
+}
+
+ol{
+    margin-left: 15%;
+    font-size: 115%;
+    list-style: none;
+}
+input{
+    height: auto;
+    width: auto;
+}
+input[type="checkbox"]{
+    transform: scale(2);
+    margin: 20px 100px 20px 10px;
+}
+.btn{
+    position: absolute;
+    margin: 0 auto;
+    width: 5%;
+    height: auto;
+    top: 20%;
+    left: 47%;
+}
+
+.btn1{
+    margin-left :10%; 
+}
+
+.section2{
+    margin-top:15%;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-theme input,
+body.dark-theme button {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+}
+
+body.dark-theme .squareTODO {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+body.dark-theme #addSquareScreen{
+    background : linear-gradient(90deg,#ff7f50,#1e1e1e)
+}
