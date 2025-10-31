@@ -67,3 +67,23 @@ input[type="checkbox"]{
 .section2{
     margin-top:15%;
 }
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-theme input,
+body.dark-theme button {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+}
+
+body.dark-theme .squareTODO {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+body.dark-theme #addSquareScreen{
+    background : linear-gradient(90deg,#ff7f50,#1e1e1e)
+}

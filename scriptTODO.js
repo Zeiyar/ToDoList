@@ -1,17 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme==="dark"){
+        document.body.classList.add("dark-theme");
+    }
 const toDoList = document.getElementById("todolist");
 const addBtn = document.getElementById("addSquareTODO");
-const carrer = document.getElementById("squareTODO");
 const addSquareScreen = document.getElementById("addSquareScreen");
 const input = document.getElementById("thingToDo");
 const addThingToDoBtn = document.getElementById("addThingToDo");
 const cancelBtn = document.getElementById("cancelBtn");
 const toblur = document.querySelectorAll(".toblur");
-const checkToDo = document.getElementById("checkToDo");
 const listDone = document.getElementById("listDone");
-const deleteBtn = document.querySelectorAll(".delete-btn");
-const modifyBtn = document.querySelectorAll(".modify-btn");
-
+const somberBtn = document.getElementById("somber");
 
 let menu = true;
 let listToDo = [];
@@ -152,4 +152,15 @@ window.onload= function (){
         doneList.forEach(task => addTaskToDOMINGO(task));
     }
 }
+
+somberBtn.addEventListener("click",()=>{
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")){
+        localStorage.setItem("theme","dark")
+        somberBtn.textContent = "light mode"
+    } else {
+        localStorage.setItem("theme","light")
+        somberBtn.textContent = "somber mode"
+    }
+})
 });
